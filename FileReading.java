@@ -10,9 +10,11 @@ public class FileReading {
 		File file = new File("C:\\TextFolder\\Annotation.txt");
 		FileReader fr= new FileReader(file);
 		int temp =0;
+		
 		while((temp=fr.read())!=-1) {
 			System.out.print((char)(temp));
 		}
+		System.out.println(temp);
 	}
 
 }
